@@ -15,7 +15,7 @@ namespace LTQL.Models
         public DbSet<Student> Students { get; set; }
 
         public DbSet<SinhVien> SinhViens { get; set; }
-
+        public DbSet<Person> Persons { get; set; }
     }
 }
 //DESKTOP - JLO7L7B

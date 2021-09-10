@@ -10,6 +10,7 @@ namespace LTQL.Models
     {
         [Key]
         public string MaSV  { get; set; }
+     [Re]
         public string TenSV  { get; set; }
         public string SDT { get; set; }
     }
