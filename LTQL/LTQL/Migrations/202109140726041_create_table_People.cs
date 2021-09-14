@@ -3,7 +3,7 @@ namespace LTQL.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class create_table_P : DbMigration
+    public partial class create_table_People : DbMigration
     {
         public override void Up()
         {
@@ -11,10 +11,10 @@ namespace LTQL.Migrations
                 "dbo.People",
                 c => new
                     {
-                        PersonID = c.String(nullable: false, maxLength: 128),
-                        PersonName = c.String(),
+                        PeopleID = c.String(nullable: false, maxLength: 128),
+                        PeopleName = c.String(nullable: false),
                     })
-                .PrimaryKey(t => t.PersonID);
+                .PrimaryKey(t => t.PeopleID);
             
         }
         

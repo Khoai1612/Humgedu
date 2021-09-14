@@ -116,6 +116,12 @@
       <Private>True</Private>
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.abstractions.2.0.3\lib\net35\xunit.abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.core, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.extensibility.core.2.4.1\lib\net452\xunit.core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
@@ -127,6 +133,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PeopleController.cs" />
     <Compile Include="Controllers\SinhViensController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -147,13 +154,13 @@
     <Compile Include="Migrations\202109100311166_Add_Coulumn_SinhVien_SDT1.designer.cs">
       <DependentUpon>202109100311166_Add_Coulumn_SinhVien_SDT1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202109100659003_create_table_P.cs" />
-    <Compile Include="Migrations\202109100659003_create_table_P.Designer.cs">
-      <DependentUpon>202109100659003_create_table_P.cs</DependentUpon>
+    <Compile Include="Migrations\202109140726041_create_table_People.cs" />
+    <Compile Include="Migrations\202109140726041_create_table_People.Designer.cs">
+      <DependentUpon>202109140726041_create_table_People.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\LTQLDbcontext.cs" />
-    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\People.cs" />
     <Compile Include="Models\SinhVien.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -199,6 +206,11 @@
     <Content Include="Views\SinhViens\Details.cshtml" />
     <Content Include="Views\SinhViens\Edit.cshtml" />
     <Content Include="Views\SinhViens\Index.cshtml" />
+    <Content Include="Views\People\Create.cshtml" />
+    <Content Include="Views\People\Delete.cshtml" />
+    <Content Include="Views\People\Details.cshtml" />
+    <Content Include="Views\People\Edit.cshtml" />
+    <Content Include="Views\People\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -229,8 +241,8 @@
     <EmbeddedResource Include="Migrations\202109100311166_Add_Coulumn_SinhVien_SDT1.resx">
       <DependentUpon>202109100311166_Add_Coulumn_SinhVien_SDT1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202109100659003_create_table_P.resx">
-      <DependentUpon>202109100659003_create_table_P.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202109140726041_create_table_People.resx">
+      <DependentUpon>202109140726041_create_table_People.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

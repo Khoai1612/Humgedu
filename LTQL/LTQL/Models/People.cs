@@ -6,12 +6,11 @@ using System.Web;
 
 namespace LTQL.Models
 {
-    public class SinhVien
+    public class People
     {
         [Key]
-        public string MaSV  { get; set; }
-     
-        public string TenSV  { get; set; }
-        public string SDT { get; set; }
+        public string PeopleID { get; set; }
+        [Required(ErrorMessage ="ID không được bỏ trống")]
+        public string PeopleName { get; set; }
     }
 }
