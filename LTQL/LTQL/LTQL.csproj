@@ -132,6 +132,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\EmployeesController.cs" />
+    <Compile Include="Controllers\EmpNewController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PeopleController.cs" />
     <Compile Include="Controllers\SinhViensController.cs" />
@@ -158,7 +160,13 @@
     <Compile Include="Migrations\202109140726041_create_table_People.Designer.cs">
       <DependentUpon>202109140726041_create_table_People.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109200138497_create_table_Employee.cs" />
+    <Compile Include="Migrations\202109200138497_create_table_Employee.Designer.cs">
+      <DependentUpon>202109200138497_create_table_Employee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AutoGenerateKey.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\LTQLDbcontext.cs" />
     <Compile Include="Models\People.cs" />
     <Compile Include="Models\SinhVien.cs" />
@@ -211,6 +219,13 @@
     <Content Include="Views\People\Details.cshtml" />
     <Content Include="Views\People\Edit.cshtml" />
     <Content Include="Views\People\Index.cshtml" />
+    <Content Include="Views\Employees\Create.cshtml" />
+    <Content Include="Views\Employees\Delete.cshtml" />
+    <Content Include="Views\Employees\Details.cshtml" />
+    <Content Include="Views\Employees\Edit.cshtml" />
+    <Content Include="Views\Employees\Index.cshtml" />
+    <Content Include="Views\EmpNew\Index.cshtml" />
+    <Content Include="Views\EmpNew\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -243,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109140726041_create_table_People.resx">
       <DependentUpon>202109140726041_create_table_People.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109200138497_create_table_Employee.resx">
+      <DependentUpon>202109200138497_create_table_Employee.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

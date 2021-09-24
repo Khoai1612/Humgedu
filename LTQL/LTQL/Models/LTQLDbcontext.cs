@@ -11,18 +11,12 @@ namespace LTQL.Models
         public LTQLDbcontext() : base("LTQLDbcontext")
         {
         }
-
-
         public DbSet<Student> Students { get; set; }
 
         public DbSet<SinhVien> SinhViens { get; set; }
         public DbSet<People> Peoples { get; set; }
+        public DbSet<Employee> Employees { get; set; }
 
-        
-        
-      
-        
-        
     }
 }
 //DESKTOP - JLO7L7B
