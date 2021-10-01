@@ -16,7 +16,7 @@ namespace LTQL.Models
         public DbSet<SinhVien> SinhViens { get; set; }
         public DbSet<People> Peoples { get; set; }
         public DbSet<Employee> Employees { get; set; }
-
+        public DbSet <Account> Accounts { get; set; }
     }
 }
 //DESKTOP - JLO7L7B
