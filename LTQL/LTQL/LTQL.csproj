@@ -169,6 +169,14 @@
     <Compile Include="Migrations\202110010812148_create_table_Account.Designer.cs">
       <DependentUpon>202110010812148_create_table_Account.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202110050551347_create_table_Role.cs" />
+    <Compile Include="Migrations\202110050551347_create_table_Role.Designer.cs">
+      <DependentUpon>202110050551347_create_table_Role.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110080236362_add_column_Account.cs" />
+    <Compile Include="Migrations\202110080236362_add_column_Account.Designer.cs">
+      <DependentUpon>202110080236362_add_column_Account.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\AutoGenerateKey.cs" />
@@ -176,8 +184,10 @@
     <Compile Include="Models\Encrytion.cs" />
     <Compile Include="Models\LTQLDbcontext.cs" />
     <Compile Include="Models\People.cs" />
+    <Compile Include="Models\Role.cs" />
     <Compile Include="Models\SinhVien.cs" />
     <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\UsersRoleProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -621,6 +631,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202110010812148_create_table_Account.resx">
       <DependentUpon>202110010812148_create_table_Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110050551347_create_table_Role.resx">
+      <DependentUpon>202110050551347_create_table_Role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110080236362_add_column_Account.resx">
+      <DependentUpon>202110080236362_add_column_Account.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -17,6 +17,7 @@ namespace LTQL.Models
         public DbSet<People> Peoples { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet <Account> Accounts { get; set; }
+        public object Roles { get; internal set; }
     }
 }
 //DESKTOP - JLO7L7B
