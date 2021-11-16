@@ -13,7 +13,7 @@ namespace LTQL.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202110050551347_create_table_Role"; }
+            get { return "202110120226128_create_table_Role"; }
         }
         
         string IMigrationMetadata.Source

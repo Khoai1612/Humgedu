@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using LTQL.Models;
 
 namespace LTQL.Controllers
-{
+{ 
     public class EmpNewController : Controller
     {
         LTQLDbcontext db = new LTQLDbcontext();

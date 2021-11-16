@@ -7,13 +7,13 @@ namespace LTQL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class add_column_Account : IMigrationMetadata
+    public sealed partial class create_table_Account1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(add_column_Account));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(create_table_Account1));
         
         string IMigrationMetadata.Id
         {
-            get { return "202110080236362_add_column_Account"; }
+            get { return "202110120221493_create_table_Account1"; }
         }
         
         string IMigrationMetadata.Source
